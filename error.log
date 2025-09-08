@@ -1,0 +1,32 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 380-518-516
+INFO:werkzeug:127.0.0.1 - - [08/Sep/2025 12:04:50] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Sep/2025 12:04:50] "GET /static/css/styles.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Sep/2025 12:04:50] "GET /static/js/app.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [08/Sep/2025 12:04:51] "GET /static/images/logo.png HTTP/1.1" 200 -
+ERROR:app:Unhandled Exception: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "G:\My Drive\AI-ML Spam Detection System (Cybersecurity Project PoC)\venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\My Drive\AI-ML Spam Detection System (Cybersecurity Project PoC)\venv\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+  File "G:\My Drive\AI-ML Spam Detection System (Cybersecurity Project PoC)\venv\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\My Drive\AI-ML Spam Detection System (Cybersecurity Project PoC)\venv\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "G:\My Drive\AI-ML Spam Detection System (Cybersecurity Project PoC)\venv\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+INFO:werkzeug:127.0.0.1 - - [08/Sep/2025 12:04:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [08/Sep/2025 12:05:23] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 380-518-516
+INFO:werkzeug: * Detected change in 'G:\\My Drive\\AI-ML Spam Detection System (Cybersecurity Project PoC)\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
